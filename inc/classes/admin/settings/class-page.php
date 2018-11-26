@@ -162,7 +162,18 @@ class Page implements Subscriber_Interface {
 			$this->cloudflare_section();
 			$this->sucuri_section();
 		} else {
-			$this->license_section();
+			$this->dashboard_section();
+			$this->cache_section();
+			$this->assets_section();
+			$this->media_section();
+			$this->preload_section();
+			$this->advanced_cache_section();
+			$this->database_section();
+			$this->cdn_section();
+			$this->heartbeat_section();
+			$this->addons_section();
+			$this->cloudflare_section();
+			$this->sucuri_section();
 		}
 
 		$this->render->set_settings( $this->settings->get_settings() );
